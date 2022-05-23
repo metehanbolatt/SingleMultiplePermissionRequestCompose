@@ -19,7 +19,7 @@ import com.google.accompanist.permissions.*
 fun RequestPermission(
     permission: String,
     deniedMessage: String = "Give this app a permission to proceed. If it doesn't work, then you'll have to do it manually from the settings.",
-    rationaleMessage: String = "To use this app's functionalities, you need to give us the permission.",
+    rationaleMessage: String = "To use this app's functionalities, you need to give us the permission."
 ) {
     val permissionState = rememberPermissionState(permission)
 
