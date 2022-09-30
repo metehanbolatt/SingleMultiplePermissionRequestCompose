@@ -1,6 +1,5 @@
 package com.metehanbolat.singlemultiplepermissionrequestcompose
 
-import android.Manifest
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,12 +13,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             SingleMultiplePermissionRequestComposeTheme {
                 //RequestPermission(permission = Manifest.permission.READ_CONTACTS)
+                /*
                 RequestMultiplePermissions(
                     permissions = listOf(
                         Manifest.permission.READ_CONTACTS,
                         Manifest.permission.CAMERA
                     )
                 )
+                 */
+                RequestPermission(context = this)
             }
         }
     }
